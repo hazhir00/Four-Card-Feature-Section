@@ -1,0 +1,140 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variable */
+
+:root {
+  /* Colors */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  /* Fonts */
+  --Font: poppins;
+  --Thin: 200;
+  --Regular: 400;
+  --Bold: 600;
+}
+
+/* Body */
+
+body {
+  font-family: poppins, sans-serif;
+  background-color: var(--Very-Light-Gray);
+  color: var(--Grayish-Blue);
+}
+
+/* Main */
+
+main {
+  padding: 4em 1.5em;
+}
+
+/* Header */
+
+h1 {
+  font-weight: var(--Regular);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h1 strong {
+  color: var(--Very-Dark-Blue);
+}
+
+header p {
+  text-align: center;
+  margin: 1em 0 5em;
+}
+
+/* Articles */
+
+h2 {
+  color: var(--Very-Dark-Blue);
+  margin-top: 0.5em;
+}
+
+article {
+  background-color: var(--White);
+  padding: 1em 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 1em hsl(0, 0%, 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+article p {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+article img {
+  width: 25%;
+  align-self: flex-end;
+}
+
+/* Borders */
+
+.cyan-border {
+  border-top: 5px solid var(--Cyan);
+}
+
+.red-border {
+  border-top: 5px solid var(--Red);
+}
+
+.orange-border {
+  border-top: 5px solid var(--Orange);
+}
+
+.blue-border {
+  border-top: 5px solid var(--Blue);
+}
+
+@media (min-width: 660px) {
+  .main-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-div div {
+    width: 31.5%;
+  }
+
+  article {
+    height: 47%;
+  }
+
+  article p {
+    height: 25%;
+  }
+
+  .first-column,
+  .third-column {
+    display: flex;
+    align-items: center;
+  }
+
+  .second-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
